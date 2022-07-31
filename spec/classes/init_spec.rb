@@ -4,7 +4,7 @@ require 'spec_helper'
 describe 'acct' do
   context 'supported operating systems' do
     on_supported_os.each do |os, facts|
-      package_name = facts[:os]['family'] === 'RedHat' ? 'psacct' : 'acct'
+      package_name = facts[:os]['family'] == 'RedHat' ? 'psacct' : 'acct'
 
       context "on #{os}" do
         let(:facts) { facts }
