@@ -1,4 +1,4 @@
-# acct defaults
+# @summary Default configuration types
 type Acct::Defaults = Struct[
   {
     Optional['enable']  => Boolean,

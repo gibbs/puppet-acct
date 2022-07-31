@@ -1,4 +1,4 @@
-# @summary acct package
+# @summary package management
 #
 # @api private
 #

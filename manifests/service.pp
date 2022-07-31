@@ -1,4 +1,4 @@
-# @summary acct service
+# @summary service management
 #
 # @api private
 #
