@@ -1,4 +1,4 @@
-# @summary acct - GNU Accounting Utilities
+# @summary GNU Accounting Utilities
 #
 # @param defaults
 #   acct defaults configuration

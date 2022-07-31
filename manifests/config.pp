@@ -1,4 +1,4 @@
-# @summary acct config
+# @summary configuration
 #
 # @api private
 #
