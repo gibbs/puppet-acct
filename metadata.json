@@ -1,6 +1,6 @@
 {
   "name": "genv-acct",
-  "version": "0.9.0",
+  "version": "1.0.0",
   "author": "gibbs",
   "summary": "Install, configure and manage acct process accounting",
   "license": "MIT",
