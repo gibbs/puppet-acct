@@ -47,6 +47,10 @@ spec/spec_helper.rb:
     - 'RSpec.configure do |c|'
     - '  c.facter_implementation = :rspec'
     - 'end'
+Rakefile:
+  default_disabled_lint_checks:
+    - manifest_whitespace_opening_brace_before
+    - strict_indent
 .puppet-lint.rc:
   enabled_lint_checks:
     - 140chars
@@ -70,7 +74,6 @@ spec/spec_helper.rb:
     - right_to_left_relationship
     - slash_comments
     - star_comments
-    # - strict_indent
     - trailing_comma
     - trailing_whitespace
     - unquoted_file_mode
