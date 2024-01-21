@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/) and this project adheres to [Semantic Versioning](http://semver.org).
 
+## [v2.0.0](https://github.com/gibbs/puppet-acct/tree/v2.0.0) (2024-01-21)
+
+[Full Changelog](https://github.com/gibbs/puppet-acct/compare/v1.1.0...v2.0.0)
+
+### Added
+
+- Add Puppet 8 support. Drop near EOL Linux version support. [\#4](https://github.com/gibbs/puppet-acct/pull/4) ([gibbs](https://github.com/gibbs))
+
+### Fixed
+
+- PDK 3.0.1 update [\#3](https://github.com/gibbs/puppet-acct/pull/3) ([gibbs](https://github.com/gibbs))
+
 ## [v1.1.0](https://github.com/gibbs/puppet-acct/tree/v1.1.0) (2022-11-24)
 
 [Full Changelog](https://github.com/gibbs/puppet-acct/compare/v1.0.0...v1.1.0)
