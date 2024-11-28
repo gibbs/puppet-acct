@@ -4,8 +4,11 @@ require 'bundler'
 require 'puppet_litmus/rake_tasks' if Gem.loaded_specs.key? 'puppet_litmus'
 require 'puppetlabs_spec_helper/rake_tasks'
 require 'puppet-syntax/tasks/puppet-syntax'
-require 'github_changelog_generator/task' if Gem.loaded_specs.key? 'github_changelog_generator'
 require 'puppet-strings/tasks' if Gem.loaded_specs.key? 'puppet-strings'
+require 'puppet_blacksmith/rake_tasks' if Gem.loaded_specs.key? 'puppet-blacksmith'
+require 'github_changelog_generator/task' if Gem.loaded_specs.key? 'github_changelog_generator'
+
+PuppetLint.configuration.send('disable_relative')
 
 def changelog_user
   return unless Rake.application.top_level_tasks.include? "changelog"
@@ -40,11 +43,6 @@ def changelog_future_release
   returnVal
 end
 
-PuppetLint.configuration.send('disable_relative')
-PuppetLint.configuration.send('disable_manifest_whitespace_opening_brace_before')
-PuppetLint.configuration.send('disable_strict_indent')
-
-
 if Gem.loaded_specs.key? 'github_changelog_generator'
   GitHubChangelogGenerator::RakeTask.new :changelog do |config|
     raise "Set CHANGELOG_GITHUB_TOKEN environment variable eg 'export CHANGELOG_GITHUB_TOKEN=valid_token_here'" if Rake.application.top_level_tasks.include? "changelog" and ENV['CHANGELOG_GITHUB_TOKEN'].nil?
@@ -75,10 +73,7 @@ else
   desc 'Generate a Changelog from GitHub'
   task :changelog do
     raise <<EOM
-The changelog tasks depends on recent features of the github_changelog_generator gem.
-Please manually add it to your .sync.yml for now, and run `pdk update`:
----
-Gemfile:
+The changelog tasks depends on recent features of the github_changelog_generator gem. Please manually add it to your .sync.yml for now, and run `pdk update`: --- Gemfile:
   optional:
     ':development':
       - gem: 'github_changelog_generator'

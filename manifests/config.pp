@@ -12,7 +12,7 @@ class acct::config {
       group   => 0,
       mode    => '0644',
       content => epp('acct/acct.epp', {
-        defaults => $acct::defaults,
+          defaults => $acct::defaults,
       }),
     }
   }
