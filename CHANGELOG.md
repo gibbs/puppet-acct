@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/) and this project adheres to [Semantic Versioning](http://semver.org).
 
+## [v2.1.0](https://github.com/gibbs/puppet-acct/tree/v2.1.0) (2025-04-27)
+
+[Full Changelog](https://github.com/gibbs/puppet-acct/compare/v2.0.0...v2.1.0)
+
+### Added
+
+- Add Ubuntu 24.04 support [\#12](https://github.com/gibbs/puppet-acct/pull/12) ([gibbs](https://github.com/gibbs))
+- Add support for RedHat 9, Rocky 9 and AlmaLinux 9 [\#11](https://github.com/gibbs/puppet-acct/pull/11) ([gibbs](https://github.com/gibbs))
+- Remove Ubuntu 20.04 Support [\#10](https://github.com/gibbs/puppet-acct/pull/10) ([gibbs](https://github.com/gibbs))
+- Remove Puppet 7 Support [\#8](https://github.com/gibbs/puppet-acct/pull/8) ([gibbs](https://github.com/gibbs))
+- Add support for Puppet 8 [\#6](https://github.com/gibbs/puppet-acct/pull/6) ([gibbs](https://github.com/gibbs))
+
 ## [v2.0.0](https://github.com/gibbs/puppet-acct/tree/v2.0.0) (2024-01-21)
 
 [Full Changelog](https://github.com/gibbs/puppet-acct/compare/v1.1.0...v2.0.0)
